@@ -20,6 +20,7 @@ This is a reading list of papers/videos/repos I've personally found useful as I 
 * [Megatron-LM](https://arxiv.org/abs/1909.08053): For an introduction to Tensor Parallelism
 * [Fast Inference from Transformers via Speculative Decoding](https://arxiv.org/abs/2211.17192): This is the paper that helped me grok the difference in performance characteristics between prefill and autoregressive decoding
 * [Group Query Attention](https://arxiv.org/pdf/2305.13245): KV caches can be chunky this is how you fix it
+* [Orca: A Distributed Serving System for Transformer-Based Generative Models](https://www.usenix.org/conference/osdi22/presentation/yu): introduced continuous batching (great pre-read for the PagedAttention paper).
 * [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180): the most crucial optimization for high throughput batch inference
 
 ## Quantization
