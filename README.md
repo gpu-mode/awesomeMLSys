@@ -28,3 +28,8 @@ This is a reading list of papers/videos/repos I've personally found useful as I 
 * [LLM.int8](https://arxiv.org/abs/2208.07339): All of Dettmers papers are great but this is a natural intro
 * [FP8 formats for deep learning](https://arxiv.org/abs/2209.05433): For a first hand look of how new number formats come about
 * [Smoothquant](https://arxiv.org/abs/2211.10438): Balancing rounding errors between weights and activations#
+
+## Long context length
+* [RoFormer: Enhanced Transformer with Rotary Position Embedding](https://arxiv.org/abs/2104.09864): The paper that introduced rotary positional embeddings
+* [YaRN: Efficient Context Window Extension of Large Language Models](https://arxiv.org/abs/2309.00071): Extend base model context lengths with finetuning
+* [Ring Attention with Blockwise Transformers for Near-Infinite Context](https://arxiv.org/abs/2310.01889): Scale to infinite context lengths as long as you can stack more GPUs
