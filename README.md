@@ -33,3 +33,10 @@ This is a reading list of papers/videos/repos I've personally found useful as I 
 * [RoFormer: Enhanced Transformer with Rotary Position Embedding](https://arxiv.org/abs/2104.09864): The paper that introduced rotary positional embeddings
 * [YaRN: Efficient Context Window Extension of Large Language Models](https://arxiv.org/abs/2309.00071): Extend base model context lengths with finetuning
 * [Ring Attention with Blockwise Transformers for Near-Infinite Context](https://arxiv.org/abs/2310.01889): Scale to infinite context lengths as long as you can stack more GPUs
+
+## Sparsity
+* [Venom](https://arxiv.org/pdf/2310.02065): Vectorized N:M Format for sparse tensor cores
+* [Megablocks](https://arxiv.org/pdf/2211.15841): Efficient Sparse training with mixture of experts
+* [ReLu Strikes Back](https://openreview.net/pdf?id=osoWxY8q2E): Activation sparsity in LLMs
+* [Sparse Llama](https://arxiv.org/pdf/2405.03594)
+* [Simple pruning for LLMs](https://arxiv.org/pdf/2306.11695) 
