@@ -17,13 +17,12 @@ This is a reading list of papers/videos/repos I've personally found useful as I 
 * [Towards Efficient Generative Large Language Model Serving: A Survey from Algorithms to Systems](https://arxiv.org/abs/2312.15234): Wonderful survey, start here
 * [Efficiently Scaling transformer inference](https://arxiv.org/abs/2211.05102): Introduced many ideas most notably KV caches
 * [Making Deep Learning go Brrr from First Principles](https://horace.io/brrr_intro.html): One of the best intros to fusions and overhead
-* [ZeRO: Memory Optimizations Toward Training Trillion Parameter Models](https://arxiv.org/abs/1910.02054): The ZeRO algorithm behind FSDP and DeepSpeed intelligently reducing memory usage for data parallelism.
-* [Megatron-LM](https://arxiv.org/abs/1909.08053): For an introduction to Tensor Parallelism
 * [Fast Inference from Transformers via Speculative Decoding](https://arxiv.org/abs/2211.17192): This is the paper that helped me grok the difference in performance characteristics between prefill and autoregressive decoding
 * [Group Query Attention](https://arxiv.org/pdf/2305.13245): KV caches can be chunky this is how you fix it
 * [Orca: A Distributed Serving System for Transformer-Based Generative Models](https://www.usenix.org/conference/osdi22/presentation/yu): introduced continuous batching (great pre-read for the PagedAttention paper).
 * [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180): the most crucial optimization for high throughput batch inference
 * [Colfax Research Blog](https://research.colfax-intl.com/blog/): Excellent blog if you're interested in learning more about CUTLASS and modern GPU programming
+* [Sarathi LLM](https://arxiv.org/abs/2308.16369): Introduces chunked prefill to make workloads more balanced between prefill and decode
 
 ## Quantization
 * [A White Paper on Neural Network Quantization](https://arxiv.org/abs/2106.08295): Start here this is will give you the foundation to quickly skim all the other papers
@@ -51,3 +50,5 @@ This is a reading list of papers/videos/repos I've personally found useful as I 
 * [jit checkpointing](https://dl.acm.org/doi/pdf/10.1145/3627703.3650085): a very clever alternative to periodic checkpointing
 * [Reducing Activation Recomputation in Large Transformer models](https://arxiv.org/abs/2205.05198): THe paper thatt introduced selective activation checkpointing and goes over activation recomputation strategies
 * [Breaking the computation and communication abstraction barrier](https://arxiv.org/abs/2105.05720): God tier paper that goes over research at the intersection of distributed computing and compilers to maximize comms overlap
+* [ZeRO: Memory Optimizations Toward Training Trillion Parameter Models](https://arxiv.org/abs/1910.02054): The ZeRO algorithm behind FSDP and DeepSpeed intelligently reducing memory usage for data parallelism.
+* [Megatron-LM](https://arxiv.org/abs/1909.08053): For an introduction to Tensor Parallelism
