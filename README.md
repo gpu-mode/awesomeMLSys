@@ -23,12 +23,14 @@ This is a reading list of papers/videos/repos I've personally found useful as I 
 * [Group Query Attention](https://arxiv.org/pdf/2305.13245): KV caches can be chunky this is how you fix it
 * [Orca: A Distributed Serving System for Transformer-Based Generative Models](https://www.usenix.org/conference/osdi22/presentation/yu): introduced continuous batching (great pre-read for the PagedAttention paper).
 * [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180): the most crucial optimization for high throughput batch inference
+* [Colfax Research Blog](https://research.colfax-intl.com/blog/): Excellent blog if you're interested in learning more about CUTLASS and modern GPU programming
 
 ## Quantization
 * [A White Paper on Neural Network Quantization](https://arxiv.org/abs/2106.08295): Start here this is will give you the foundation to quickly skim all the other papers
 * [LLM.int8](https://arxiv.org/abs/2208.07339): All of Dettmers papers are great but this is a natural intro
 * [FP8 formats for deep learning](https://arxiv.org/abs/2209.05433): For a first hand look of how new number formats come about
-* [Smoothquant](https://arxiv.org/abs/2211.10438): Balancing rounding errors between weights and activations#
+* [Smoothquant](https://arxiv.org/abs/2211.10438): Balancing rounding errors between weights and activations
+* [Mixed precision training](https://arxiv.org/abs/1710.03740): The OG paper describing mixed precision training strategies for half
 
 ## Long context length
 * [RoFormer: Enhanced Transformer with Rotary Position Embedding](https://arxiv.org/abs/2104.09864): The paper that introduced rotary positional embeddings
@@ -36,8 +38,16 @@ This is a reading list of papers/videos/repos I've personally found useful as I 
 * [Ring Attention with Blockwise Transformers for Near-Infinite Context](https://arxiv.org/abs/2310.01889): Scale to infinite context lengths as long as you can stack more GPUs
 
 ## Sparsity
-* [Venom](https://arxiv.org/pdf/2310.02065): Vectorized N:M Format for sparse tensor cores
+* [Venom](https://arxiv.org/pdf/2310.02065): Vectorized N:M Format for sparse tensor cores when hardware only supports 2:4
 * [Megablocks](https://arxiv.org/pdf/2211.15841): Efficient Sparse training with mixture of experts
-* [ReLu Strikes Back](https://openreview.net/pdf?id=osoWxY8q2E): Activation sparsity in LLMs
-* [Sparse Llama](https://arxiv.org/pdf/2405.03594)
-* [Simple pruning for LLMs](https://arxiv.org/pdf/2306.11695) 
+* [ReLu Strikes Back](https://openreview.net/pdf?id=osoWxY8q2E): Really enjoyed this paper as an example of doing model surgery for more efficient inference
+
+## Distributed
+* [Singularity](https://arxiv.org/abs/2202.07848): Shows how to make jobs preemptible, migratable and elastic
+* [Local SGD](https://arxiv.org/abs/1805.09767): So hot right now
+* [OpenDiloco](https://arxiv.org/abs/2407.07852): Asynchronous training for decentralized training
+* [torchtitan](https://arxiv.org/abs/2410.06511): Minimal repository showing how to implement 4D parallelism in pure PyTorch
+* [pipedream](https://arxiv.org/abs/1806.03377): The pipeline parallel paper
+* [jit checkpointing](https://dl.acm.org/doi/pdf/10.1145/3627703.3650085): a very clever alternative to periodic checkpointing
+* [Reducing Activation Recomputation in Large Transformer models](https://arxiv.org/abs/2205.05198): THe paper thatt introduced selective activation checkpointing and goes over activation recomputation strategies
+* [Breaking the computation and communication abstraction barrier](https://arxiv.org/abs/2105.05720): God tier paper that goes over research at the intersection of distributed computing and compilers to maximize comms overlap
