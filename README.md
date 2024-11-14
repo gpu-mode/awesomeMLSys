@@ -23,6 +23,7 @@ This is a reading list of papers/videos/repos I've personally found useful as I 
 * [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180): the most crucial optimization for high throughput batch inference
 * [Colfax Research Blog](https://research.colfax-intl.com/blog/): Excellent blog if you're interested in learning more about CUTLASS and modern GPU programming
 * [Sarathi LLM](https://arxiv.org/abs/2308.16369): Introduces chunked prefill to make workloads more balanced between prefill and decode
+* [Epilogue Visitor Tree](https://dl.acm.org/doi/10.1145/3620666.3651369): Fuse custom epilogues by adding more epilogues to the same class (visitor design pattern) and represent the whole epilogue as a tree
 
 ## Quantization
 * [A White Paper on Neural Network Quantization](https://arxiv.org/abs/2106.08295): Start here this is will give you the foundation to quickly skim all the other papers
