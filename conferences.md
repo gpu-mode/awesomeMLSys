@@ -12,11 +12,10 @@
 * SOCP: https://www.socp.org/
 * OSDI: https://www.usenix.org/conference/osdi25
 * SOSP: https://www.sosp.org/
-* FAST: https://www.usenix.org/conference/fast25
 * NSDI: https://www.usenix.org/conference/nsdi25
 
 
-# Researchers
+# Researchers (WIP)
 
 Very incomplete list of researchers and their google scholar profiles.
 
