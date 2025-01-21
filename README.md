@@ -2,6 +2,7 @@
 
 This is a reading list of papers/videos/repos I've personally found useful as I was ramping up on ML Systems and that I wish more people would just sit and study carefully during their work hours. If you're looking for more recommendations, go through the citations of the below papers and enjoy!
 
+[Conferences](conferences.md) where MLSys papers get published
 
 ## Attention Mechanism
 * [Attention is all you need](https://arxiv.org/abs/1706.03762): Start here, Still one of the best intros
