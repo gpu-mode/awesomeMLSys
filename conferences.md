@@ -9,7 +9,6 @@
 * ISCA: https://iscaconf.org/isca2024/
 * HPCA: https://hpca-conf.org/2025/
 * MICRO: https://microarch.org/micro57/
-* SOCP: https://www.socp.org/
 * OSDI: https://www.usenix.org/conference/osdi25
 * SOSP: https://www.sosp.org/
 * NSDI: https://www.usenix.org/conference/nsdi25

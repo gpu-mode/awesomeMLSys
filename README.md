@@ -54,3 +54,15 @@ This is a reading list of papers/videos/repos I've personally found useful as I 
 * [Breaking the computation and communication abstraction barrier](https://arxiv.org/abs/2105.05720): God tier paper that goes over research at the intersection of distributed computing and compilers to maximize comms overlap
 * [ZeRO: Memory Optimizations Toward Training Trillion Parameter Models](https://arxiv.org/abs/1910.02054): The ZeRO algorithm behind FSDP and DeepSpeed intelligently reducing memory usage for data parallelism.
 * [Megatron-LM](https://arxiv.org/abs/1909.08053): For an introduction to Tensor Parallelism
+* [DistServe](https://arxiv.org/abs/2401.09670): Resource disaggregation for different phase of AI model
+* [HybridFlow](https://arxiv.org/abs/2409.19256): resource scheduling in RL for LLM
+* [Ray](https://arxiv.org/abs/1712.05889): A distributed framework for emerging AI applications, like LLM RL
+
+## Speculative decoding
+* [Fast Inference from Transformers via Speculative Decoding](https://arxiv.org/abs/2211.17192): original SD proposed by google
+* [Medusa](https://arxiv.org/abs/2401.10774): 1 model with k small head for parallel prediction of k next tokens
+* [EAGLE series](https://github.com/SafeAILab/EAGLE): popular speculator baselines
+* [Deepseek MTP in V3](https://arxiv.org/abs/2412.19437): deployment in frontier LLM
+
+## Linear attention
+* [Flash linear attention](https://github.com/fla-org/flash-linear-attention): Efficient implementations of state-of-the-art linear attention models (and their papers)
