@@ -27,6 +27,9 @@ This is a reading list of papers/videos/repos I've personally found useful as I 
 * [Epilogue Visitor Tree](https://dl.acm.org/doi/10.1145/3620666.3651369): Fuse custom epilogues by adding more epilogues to the same class (visitor design pattern) and represent the whole epilogue as a tree
 
 ## Quantization
+
+- [OneComp: One-Line Revolution for Generative AI Model Compression](https://arxiv.org/abs/2603.28845) — A resource-adaptive PTQ pipeline integrating progressive (layer→block→global) refinement, ILP-based mixed-precision assignment, and SpinQuant/OstQuant-style rotation preprocessing. [Code](https://github.com/FujitsuResearch/OneCompression).
+- [Quantization Error Propagation (NeurIPS 2025)](https://openreview.net/forum?id=a3l3K9khbL) — Propagates quantization residuals to downstream layers.
 * [A White Paper on Neural Network Quantization](https://arxiv.org/abs/2106.08295): Start here this is will give you the foundation to quickly skim all the other papers
 * [LLM.int8](https://arxiv.org/abs/2208.07339): All of Dettmers papers are great but this is a natural intro
 * [FP8 formats for deep learning](https://arxiv.org/abs/2209.05433): For a first hand look of how new number formats come about
